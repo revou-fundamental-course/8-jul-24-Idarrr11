@@ -1,14 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .main-title{
     text-align: center;
 }
 main {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    padding: 20px;
 }
 .main-content {
     flex: 1 ;
     padding: 12px;
-
+  
     ;
 }
 .jk {
@@ -60,6 +68,7 @@ input[type=radio]{
 .main-form{
     background-color:aliceblue;
     padding: 20px;
+    margin-bottom: 20px;
 }
 .bacaan{
     text-align: justify;
@@ -85,4 +94,48 @@ input[type=radio]{
 .google{
     height: 19.5%;
     width: 19.5%;
+}
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        flex: 1;
+        
+    }
+
+    .main-form,
+    .main-article {
+    
+        margin: 10px;
+    }
+
+    .result-section,
+    .general-information,
+    .footer {
+        
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        flex: 1;
+        
+    }
+
+    .main-form,
+    .main-article {
+        
+        margin: 10px;
+    }
+
+    .result-section,
+    .general-information,
+    .footer {
+       
+        margin: 10px;
+    }
 }
